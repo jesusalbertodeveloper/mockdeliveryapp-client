@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar14"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report post"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="394dp"
+        android:layout_height="85dp"
+        android:text="You are reporting the following:\n%s\nFrom:%s"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Why?"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="405dp"
+        android:layout_height="347dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/textView49"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="405dp"
+        android:layout_height="56dp"
+        android:text="Report the content only if it violates the Service's policies.See them for details"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="619dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

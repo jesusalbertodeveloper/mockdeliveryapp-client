@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="135dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/offeringname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxHeight="60dp"
+        android:minHeight="30dp"
+        android:text="Combo de papas fritas con pollo y refresco"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/restaurantname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/offeringshortlocation"
+        android:layout_width="278dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="20dp"
+        android:text="Ubicado en:Caracas,La Urbina"
+        app:layout_constraintBottom_toTopOf="@+id/offeringpublicationdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/offeringname" />
+
+    <TextView
+        android:id="@+id/restaurantname"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:text="Un restaurante"
+        app:layout_constraintBottom_toTopOf="@+id/offeringshortlocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/offeringname" />
+
+    <TextView
+        android:id="@+id/offeringpublicationdate"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text="Fecha de publicacion\n:30-03-2026"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+        android:text="20$"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/offeringshortlocation" />
+
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/offeringpublicationdate"
+        app:layout_constraintTop_toBottomOf="@+id/offeringshortlocation"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_more_vert_24"
+        tools:srcCompat="@drawable/baseline_more_vert_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

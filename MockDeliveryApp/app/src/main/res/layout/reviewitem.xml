@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="238dp">
+
+    <RatingBar
+        android:id="@+id/starcount"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:numStars="5"
+        android:rating="5"
+        app:layout_constraintBottom_toTopOf="@+id/reviewtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/reviewername"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reviewername"
+        android:layout_width="85dp"
+        android:layout_height="18dp"
+        android:text="Someone"
+        app:layout_constraintBottom_toTopOf="@+id/reviewtext"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reviewdate"
+        android:layout_width="76dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:text="01/01/2001"
+        app:layout_constraintBottom_toTopOf="@+id/reviewtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/starcount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="2dp"
+        android:layout_height="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/reviewtext"
+        app:layout_constraintEnd_toStartOf="@+id/starcount"
+        app:layout_constraintStart_toEndOf="@+id/reviewername"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reviewtext"
+        android:layout_width="384dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="36dp"
+        android:text="This is a placeholder text"
+        app:layout_constraintBottom_toTopOf="@id/buttontoreportreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <Button
+        android:id="@+id/buttontoreportreview"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:text="Report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewtext"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
